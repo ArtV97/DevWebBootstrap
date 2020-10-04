@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   	<link href="assets/css/bootstrap.css" rel="stylesheet">
+  	<link href="assets/css/all.css" rel="stylesheet">
+	<link href="assets/css/styles.css" rel="stylesheet">
+	<title>Valhalla</title>   
+</head>
+<body>
+	<nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+		<div class="container">
+		   <a class="navbar-brand" href=""><img src="assets/images/logo.png" style="width: 150px;" alt="Valhalla"></a>
+		   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+			  aria-controls="menu" aria-expanded="false" aria-label="Botão de navegação">
+			  <span class="navbar-toggler-icon"></span>
+		   </button>
+  
+		   <div class="collapse navbar-collapse" id="menu">
+			  <div class="navbar-nav mr-auto">
+				<div class="dropdown">
+					<a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown"
+					 href="#">Livros</a>
+					<ul class="dropdown-menu row">
+						<li class="col-lg-5">
+							<div class="container">
+								<h6 class="text-center">Favoritos dos Leitores</h6>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item list-group-item-action"><a href="">O Senhor dos Anéis</a></li>
+									<li class="list-group-item list-group-item-action"><a href="">O Hobbit</a></li>
+									<li class="list-group-item list-group-item-action"><a href="">Sherlock Holmes</a></li>
+									<li class="list-group-item list-group-item-action"><a href="">Harry Potter</a></li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="col-lg-5">
+							<div class="container">
+								<h6 class="text-center">Busque por tema</h6>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item list-group-item-action"><a href="">Fantasia</a></li>
+									<li class="list-group-item list-group-item-action"><a href="">Sci-Fi</a></li>
+									<li class="list-group-item list-group-item-action"><a href="">História</a></li>
+									<li class="list-group-item list-group-item-action"><a href="">Mistério</a></li>
+									<li class="list-group-item list-group-item-action"><a href="">Romance</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				 </div>
+				 <a class="nav-link nav-item" href="autores.html">Autores</a>
+				 <a class="nav-link nav-item" href="#excursoes">Eventos</a>
+				 <a class="nav-link nav-item" href="contato.html">Contato</a>
+			  </div>
+			  
+			  <div class="navbar-nav">
+				 <a class="nav-link nav-item" href="#carrinho">
+					<i class="fas fa-shopping-cart"></i> Carrinho</a>
+				 <a class="nav-link nav-item" href="#janelamodal">
+					<i class="fas fa-sign-in-alt"></i> Entrar</a>
+			  </div>
+		   </div>
+		</div>
+	</nav>
+
+	<div id="carousel-id" class="carousel slide d-none d-md-block mb-4"
+      style="margin-top: 69px;" data-ride="carousel" data-interval="3000">
+      <ol class="carousel-indicators">
+         <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
+		 <li data-target="#carousel-id" data-slide-to="1"></li>
+		 <li data-target="#carousel-id" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+         <div class="carousel-item active">
+            <img src="assets/images/carousel1.jpg" class="d-block w-100" style="height: 350px;">
+            <div class="carousel-caption d-none d-md-block">
+				<h5><mark>Seja Bem Vindo a Valhalla!</mark></h5>
+			</div>
+         </div>
+         <div class="carousel-item">
+            <img src="assets/images/carousel2.jpg" class="d-block w-100" style="height: 350px;">
+            <div class="carousel-caption d-none d-md-block">
+				<h5><mark>Entre no mundo da Fantasia!</mark></h5>
+			</div>
+		 </div>
+		 <div class="carousel-item">
+            <img src="assets/images/carousel3.jpg" class="d-block w-100" style="height: 350px;">
+            <div class="carousel-caption d-none d-md-block">
+				<h5><mark>Conheça o melhor da Fantasia!</mark></h5>
+			</div>
+         </div>
+      </div>
+      <a href="#carousel-id"class="carousel-control-prev" role="button" data-slide="prev">
+         <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+         <span class="sr-only">Anterior</span>
+      </a>
+      <a href="#carousel-id"class="carousel-control-next" role="button" data-slide="next">
+         <span aria-hidden="true" class="carousel-control-next-icon"></span>
+         <span class="sr-only">Próximo</span>
+      </a>
+   </div>
+	
+   <div class="container">
+	<!-- div para impedir que o título lançamentos seja "engolido" pela navbar -->
+	<div class="d-block d-md-none" style="margin-top: 69px;"></div>
+	<div class="py-4 bg-light mb-4">
+		<h3 class="font-weight-light col-12">Lançamentos</h3>
+		<div class="container">
+		  <div class="row">
+
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="card mb-4 shadow-sm card">
+					<a href="pagina_compra">
+						<img src="assets/images/livro1.jpg" class="card-img-top" alt="Livro Tolkien" style="height: 218px; border-bottom: 1px solid lightgrey;">
+					</a>
+					<div class="card-header bg-white border-bottom-0 pb-0">
+						<h6 class="mb-0">Contos Inacabados</h6>
+						<small class="text-muted">Autor: J.R.R Tolkien</small>
+					</div>
+					<div class="card-body pt-0">
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group" style="position: relative;">
+								<button type="button" class="btn btn-sm btn-outline-secondary fas fa-cart-plus"></button>
+								<button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+							</div>
+							<small class="text-muted">R$37.90</small>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="card mb-4 shadow-sm card">
+					<a href="pagina_compra">
+						<img src="assets/images/livro2.jpg" class="card-img-top" alt="Livro Tolkien" style="height: 218px; border-bottom: 1px solid lightgrey;">
+					</a>
+					<div class="card-header bg-white border-bottom-0 pb-0">
+						<h6 class="mb-0">Contos Inacabados</h6>
+						<small class="text-muted">Autor: Christopher Paolini</small>
+					</div>
+					<div class="card-body pt-0">
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group" style="position: relative;">
+								<button type="button" class="btn btn-sm btn-outline-secondary fas fa-cart-plus"></button>
+								<button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+							</div>
+							<small class="text-muted">R$37.90</small>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="card mb-4 shadow-sm card">
+					<a href="pagina_compra">
+						<img src="assets/images/livro3.jpg" class="card-img-top" alt="Livro Tolkien" style="height: 218px; border-bottom: 1px solid lightgrey;">
+					</a>
+					<div class="card-header bg-white border-bottom-0 pb-0">
+						<h6 class="mb-0">Contos Inacabados</h6>
+						<small class="text-muted">Autor: Arthur Conan Doyle</small>
+					</div>
+					<div class="card-body pt-0">
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group" style="position: relative;">
+								<button type="button" class="btn btn-sm btn-outline-secondary fas fa-cart-plus"></button>
+								<button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+							</div>
+							<small class="text-muted">R$37.90</small>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="card mb-4 shadow-sm card">
+					<a href="pagina_compra">
+						<img src="assets/images/livro4.jpg" class="card-img-top" alt="Livro Tolkien" style="height: 218px; border-bottom: 1px solid lightgrey;">
+					</a>
+					<div class="card-header bg-white border-bottom-0 pb-0">
+						<h6 class="mb-0">Contos Inacabados</h6>
+						<small class="text-muted">Autor: J.R.R Tolkien</small>
+					</div>
+					<div class="card-body pt-0">
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group" style="position: relative;">
+								<button type="button" class="btn btn-sm btn-outline-secondary fas fa-cart-plus"></button>
+								<button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+							</div>
+							<small class="text-muted">R$37.90</small>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="card mb-4 shadow-sm card">
+					<a href="pagina_compra">
+						<img src="assets/images/livro1.jpg" class="card-img-top" alt="Livro Tolkien" style="height: 218px; border-bottom: 1px solid lightgrey;">
+					</a>
+					<div class="card-header bg-white border-bottom-0 pb-0">
+						<h6 class="mb-0">Contos Inacabados</h6>
+						<small class="text-muted">Autor: J.R.R Tolkien</small>
+					</div>
+					<div class="card-body pt-0">
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group" style="position: relative;">
+								<button type="button" class="btn btn-sm btn-outline-secondary fas fa-cart-plus"></button>
+								<button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+							</div>
+							<small class="text-muted">R$37.90</small>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="card mb-4 shadow-sm card">
+					<a href="pagina_compra">
+						<img src="assets/images/livro2.jpg" class="card-img-top" alt="Livro Tolkien" style="height: 218px; border-bottom: 1px solid lightgrey;">
+					</a>
+					<div class="card-header bg-white border-bottom-0 pb-0">
+						<h6 class="mb-0">Contos Inacabados</h6>
+						<small class="text-muted">Autor: Christopher Paolini</small>
+					</div>
+					<div class="card-body pt-0">
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group" style="position: relative;">
+								<button type="button" class="btn btn-sm btn-outline-secondary fas fa-cart-plus"></button>
+								<button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+							</div>
+							<small class="text-muted">R$37.90</small>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="card mb-4 shadow-sm card">
+					<a href="pagina_compra">
+						<img src="assets/images/livro3.jpg" class="card-img-top" alt="Livro Tolkien" style="height: 218px; border-bottom: 1px solid lightgrey;">
+					</a>
+					<div class="card-header bg-white border-bottom-0 pb-0">
+						<h6 class="mb-0">Contos Inacabados</h6>
+						<small class="text-muted">Autor: Arthur Conan Doyle</small>
+					</div>
+					<div class="card-body pt-0">
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group" style="position: relative;">
+								<button type="button" class="btn btn-sm btn-outline-secondary fas fa-cart-plus"></button>
+								<button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+							</div>
+							<small class="text-muted">R$37.90</small>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="card mb-4 shadow-sm card">
+					<a href="pagina_compra">
+						<img src="assets/images/livro4.jpg" class="card-img-top" alt="Livro Tolkien" style="height: 218px; border-bottom: 1px solid lightgrey;">
+					</a>
+					<div class="card-header bg-white border-bottom-0 pb-0">
+						<h6 class="mb-0">Contos Inacabados</h6>
+						<small class="text-muted">Autor: J.R.R Tolkien</small>
+					</div>
+					<div class="card-body pt-0">
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+						<div class="d-flex justify-content-between align-items-center">
+							<div class="btn-group" style="position: relative;">
+								<button type="button" class="btn btn-sm btn-outline-secondary fas fa-cart-plus"></button>
+								<button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+							</div>
+							<small class="text-muted">R$37.90</small>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		  </div>
+		</div>
+	  </div>
+
+	  	<div class="footer">
+			<div class="container bg-light">
+				<div class="row">
+					<div class="col-xl-4 col-lg-3 col-sm-7">
+						<h5>Autores</h5>
+						<ul class="list-unstyled">
+							<li><a href='#excursoes'> J.R.R. Tolkien</a></li>
+							<li><a href='#excursoes'>George R.R. Martin</a></li>
+							<li><a href='#excursoes'>Agatha Christie</a></li>
+						</ul>
+					</div>
+
+					<div class="col-xl-3 col-lg-3 col-sm-5">
+						<h5>Eventos</h5>
+						<ul class="list-unstyled">
+							<li><a href='#'>Visita do Autor</a></li>
+							<li><a href='#'>Feiras</a></li>
+							<li><a href='#'>Game Night</a></li>
+						</ul>
+					</div>
+				
+					<div class="col-xl-3 col-lg-3 col-sm-7">
+						<h5>Unidades</h5>
+						<ul class="list-unstyled">
+							<li><a href='#'>Rio de Janeiro - Brasil</a></li>
+							<li><a href='#'>São Paulo - Brasil</a></li>
+							<li><a href='#'>Nova York - Estados Unidos</a></li>
+						</ul>
+					</div>
+				
+					<div class="col-xl-2 col-lg-3 col-sm-5">
+						<h5>Contato</h5>
+						<ul class="list-unstyled">
+							<li><img src="assets/images/twitter.png" alt="twitter icon"><a href=""> Acompanhe no Twitter</a></li>
+							<li><img src="assets/images/facebook.jpg" alt="facebook icon"><a href=""> Comunidade</a></li>
+							<li><i class="fas fa-briefcase"></i> <a href=""> Trabalhe Conosco</a></li>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+ 		</div>
+   	</div>
+
+	<script src="assets/js/jquery-3.3.1.js"></script>
+	<script src="assets/js/popper.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>

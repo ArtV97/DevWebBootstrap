@@ -1,0 +1,17 @@
+.dropdown-menu > li {
+    display: inline-block;
+}
+
+.navbar li a{
+    text-decoration: none;
+}
+/*
+.card:hover{
+    border: 1px solid black;
+}
+*/
+@media(min-width: 768px){
+    .dropdown-menu{
+        margin-right: -1000px;
+    }
+}
