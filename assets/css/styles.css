@@ -5,11 +5,22 @@
 .navbar li a{
     text-decoration: none;
 }
-/*
-.card:hover{
+
+.page-link{
+    background: #f8f9fa;
+    color: black;
+}
+
+.page-link:hover{
+    background: #6c757d;
+    color: white;
+}
+
+.page-item.active .page-link {
+    background: #6c757d;
     border: 1px solid black;
 }
-*/
+
 @media(min-width: 768px){
     .dropdown-menu{
         margin-right: -1000px;
