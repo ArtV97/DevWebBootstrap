@@ -6,7 +6,7 @@
    	<link href="assets/css/bootstrap.css" rel="stylesheet">
   	<link href="assets/css/all.css" rel="stylesheet">
 	<link href="assets/css/styles.css" rel="stylesheet">
-	<title>Valhalla - Contato</title>   
+	<title>Valhalla - Eventos</title>   
 </head>
 <body>
 	<nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
@@ -50,8 +50,8 @@
 					</ul>
 				 </div>
 				 <a class="nav-link nav-item" href="autores.html">Autores</a>
-				 <a class="nav-link nav-item" href="eventos.html">Eventos</a>
-				 <a class="nav-link nav-item" href="">Contato</a>
+				 <a class="nav-link nav-item" href="">Eventos</a>
+				 <a class="nav-link nav-item" href="contato.html">Contato</a>
 			  </div>
 			  
 			  <div class="navbar-nav">
@@ -68,20 +68,46 @@
 	<!-- div para impedir que o título seja "engolido" pela navbar -->
 	<div style="margin-top: 69px;"></div>
 	    <div class="py-4 bg-light mb-4">
-		    <h3 class="font-weight-light col-12">Nossas Unidades</h3>
+            <div class="container">
+                <h3 class="font-weight-light">Eventos Agendados</h3>
+                <p class="text-justify">
+                    A Valhalla oferece três tipos de eventos, Visita do Autor, que é quando um autor vem até uma das
+                    unidades para promover o seu trabalho, Feiras, que são eventos no qual diversas obras entram em promoção
+                    e conta também com leituras em grupo e outras atividades, e por último o Game Night que 
+                    são eventos que reunem várias pessoas para jogar jogos de cartas e tabuleiros.
+                </p>
+                <span class="mr-1">Filtro:</span>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" checked="checked" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label active" for="inlineCheckbox1">Visita do Autor</label>
+                  </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" checked="checked" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label active" for="inlineCheckbox2">Feiras</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" checked="checked" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label active" for="inlineCheckbox3">Game Night</label>
+                </div>
+            </div>
+            
 		    <div class="container">
 		        <div class="list-group list-group-flush">
                     <div class="card list-group-item">
                         <div class="card-header bg-white">
-                            <h4>Unidade de São Paulo</h4>
+                            <div class="row">
+                                <h4 class="col-10">Feira de Outubro</h4>
+                                <span class="bg-warning rounded-pill p-1 border border-dark">Adiado</span>
+                            </div>
+                            <small class="text-muted">DD/MM/AAAA a partir das xx:xx</small>
                         </div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img src="assets/images/unidade1.jpg" style="width: 100%;">
+                                    <img src="assets/images/evento1.jpg" style="width: 100%;">
                                 </div>
                                 <div class="col-lg-6">
-                                    <h6>Sobre a unidade</h6>
+                                    <h6>Sobre o Evento</h6>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                         Phasellus eleifend vulputate metus sed venenatis. In porta turpis et risus cursus, 
@@ -92,9 +118,8 @@
                                     
                                 </div>
                                 <div class="col-12">
-                                    <h6>Contato</h6>
-                                    <span><i class="fas fa-phone"></i> (99)99999-9999</span>
-                                    <i class="fas fa-envelope-square"></i> <a href='mailto:valhallasp@gmail.com'>valhallasp@gmail.com</a>
+                                    <h6>Local</h6>
+                                    <span><i class="fas fa-building"></i> Unidade de São Paulo</span>
                                 </div>
                             </div>
                         </div>
@@ -102,15 +127,19 @@
 			
                     <div class="card list-group-item">
                         <div class="card-header bg-white">
-                            <h4>Unidade do Rio de Janeiro</h4>
+                            <div class="row">
+                                <h4 class="col-10">Visita de George R.R. Martin</h4>
+                                <span class="bg-danger text-white rounded-pill p-1 border border-dark">Cancelado</span>
+                            </div>
+                            <small class="text-muted">DD/MM/AAAA a partir das xx:xx</small>
                         </div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img src="assets/images/unidade2.jpg" style="width: 100%;">
+                                    <img src="assets/images/evento2.jpg" style="width: 100%;">
                                 </div>
                                 <div class="col-lg-6">
-                                    <h6>Sobre a unidade</h6>
+                                    <h6>Sobre o Evento</h6>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                         Phasellus eleifend vulputate metus sed venenatis. In porta turpis et risus cursus, 
@@ -121,9 +150,8 @@
                                     
                                 </div>
                                 <div class="col-12">
-                                    <h6>Contato</h6>
-                                    <span><i class="fas fa-phone"></i> (88)88888-8888</span>
-                                    <i class="fas fa-envelope-square"></i> <a href='mailto:valhallarj@gmail.com'>valhallarj@gmail.com</a>
+                                    <h6>Local</h6>
+                                    <span><i class="fas fa-building"></i> Unidade de São Paulo</span>
                                 </div>
                             </div>
                         </div>
@@ -131,15 +159,19 @@
 
                     <div class="card list-group-item">
                         <div class="card-header bg-white">
-                            <h4>Unidade de Nova York</h4>
+                            <div class="row">
+                                <h4 class="col-10">Visita virtual de J.K Rowling</h4>
+                                <span class="bg-success text-white rounded-pill p-1 border border-dark">Ativo</span>
+                            </div>
+                            <small class="text-muted">DD/MM/AAAA a partir das xx:xx</small>
                         </div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img src="assets/images/unidade3.jpg" style="width: 100%;">
+                                    <img class="border border-secondary" src="assets/images/evento3.jpg" style="width: 100%;">
                                 </div>
                                 <div class="col-lg-6">
-                                    <h6>Sobre a unidade</h6>
+                                    <h6>Sobre o Evento</h6>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                                         Phasellus eleifend vulputate metus sed venenatis. In porta turpis et risus cursus, 
@@ -150,13 +182,13 @@
                                     
                                 </div>
                                 <div class="col-12">
-                                    <h6>Contato</h6>
-                                    <span><i class="fas fa-phone"></i> (77)77777-7777</span>
-                                    <i class="fas fa-envelope-square"></i> <a href='mailto:valhallany@gmail.com'>valhallany@gmail.com</a>
+                                    <h6>Local</h6>
+                                    <span><i class="fas fa-building"></i> Unidade de Nova York</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+
 		        </div>
 		    </div>
 	    </div>
