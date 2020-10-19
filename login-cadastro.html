@@ -6,7 +6,7 @@
    	<link href="assets/css/bootstrap.css" rel="stylesheet">
   	<link href="assets/css/all.css" rel="stylesheet">
 	<link href="assets/css/styles.css" rel="stylesheet">
-	<title>Valhalla - Home</title>   
+	<title>Valhalla - Login</title>   
 </head>
 <body>
 	<nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
@@ -86,18 +86,20 @@
                         <div class="card-body text-center col-sm-6 col-lg-4">
                             <form action="" method="">
                                 <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
+                                    <label for="email_login">Email</label>
+                                    <input type="email" class="form-control" id="email_login" name="email_login">
+                                    <div class="invalid-feedback">Campo de preenchimento obrigatório</div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="senha">Password</label>
-                                    <input type="password" class="form-control" id="senha" name="senha">
+                                    <label for="senha_login">Password</label>
+                                    <input type="password" class="form-control" id="senha_login" name="senha_login">
+                                    <div class="invalid-feedback">Campo de preenchimento obrigatório</div>
                                 </div>
                                 <div class="form-group form-check">
                                     <input type="checkbox" class="form-check-input" id="remember" name="remember">
                                     <label class="form-check-label" for="remember">Remember me</label>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Login</button>
+                                <button type="button" class="btn btn-primary" id="botao_login">Login</button>
                             </form>
                         </div>
                         <div class="col-sm-3 col-lg-4"></div>
@@ -118,12 +120,13 @@
                     data-parent="#id-accordion" aria-labelledby="id-header-cadastrar">
                         <div class="col-2"></div>
                         <div class="card-body text-center col-8">
-                            <small id="emailHelp" class="text-muted">A Valhalla não compartilha seus dados.</small>
+                            <small class="text-muted">A Valhalla não compartilha seus dados.</small>
                             <form>
                                 <div class="form-row">
                                     <div class="form-group col-md-7">
-                                        <label for="inputEmail4">Nome</label>
-                                        <input type="email" class="form-control" id="inputEmail4" name="nome">
+                                        <label for="nome_cadastro">Nome</label>
+                                        <input type="text" class="form-control" id="nome_cadastro" name="nome_cadastro">
+                                        <div class="invalid-feedback">Campo de preenchimento obrigatório</div>
                                     </div>
                                     <div class="form-group col-md-5">
                                         <label for="sexo">Sexo</label>
@@ -138,49 +141,55 @@
                                                 value="F" class="form-check-input">
                                                 <label for="sexo-fem" class="form-check-label">Feminino</label>
                                             </div>
+                                            <div id="sexo-feedback" class="invalid-feedback">Campo de preenchimento obrigatório</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputPassword4">Email</label>
-                                    <input type="password" class="form-control" id="inputPassword4" name="email">
+                                    <label for="email_cadastro">Email</label>
+                                    <input type="password" class="form-control" id="email_cadastro" name="email_cadastro">
+                                    <div class="invalid-feedback">Campo de preenchimento obrigatório</div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
-                                        <label for="inputEmail4">Senha</label>
-                                        <input type="email" class="form-control" id="inputEmail4" name="senha">
+                                        <label for="senha_cadastro">Senha</label>
+                                        <input type="password" class="form-control" id="senha_cadastro" name="senha_cadastro">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="inputPassword4">Confirmar Senha</label>
-                                        <input type="password" class="form-control" id="inputPassword4">
+                                        <label for="confirmar_senha_cadastro">Confirmar Senha</label>
+                                        <input type="password" class="form-control" id="confirmar_senha_cadastro" name="confirmar_senha_cadastro">
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-4 col-md-2">
-                                        <label for="inputZip">CEP</label>
-                                        <input type="text" class="form-control" id="inputZip" name="cep">
+                                        <label for="cep_cadastro">CEP</label>
+                                        <input type="text" class="form-control" id="cep_cadastro" name="cep_cadastro">
+                                        <div class="invalid-feedback">Campo de preenchimento obrigatório</div>
                                     </div>
                                     <div class="form-group col-8 col-md-6">
-                                        <label for="inputCity">Cidade</label>
-                                        <input type="text" class="form-control" id="inputCity" name="cidade">
+                                        <label for="cidade_cadastro">Cidade</label>
+                                        <input type="text" class="form-control" id="cidade_cadastro" name="cidade_cadastro">
+                                        <div class="invalid-feedback">Campo de preenchimento obrigatório</div>
                                     </div>
                                     <div class="form-group col-md-4">
-                                        <label for="inputState">Estado</label>
-                                        <select id="inputState" class="form-control" name="estado">
-                                            <option selected>Selecione</option>
+                                        <label for="estado_cadastro">Estado</label>
+                                        <select id="estado_cadastro" class="form-control" name="estado_cadastro">
+                                            <option selected value="">Selecione</option>
                                             <option value="RJ">Rio de Janeiro</option>
                                             <option value="RS">Rio Grande do Sul</option>
                                         </select>
+                                        <div class="invalid-feedback">Campo de preenchimento obrigatório</div>
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
-                                        <label for="inputAddress">Endereço</label>
-                                        <input type="text" name="endereco" class="form-control" id="inputAddress" placeholder="Rua Ferreira 07">
+                                        <label for="endereco_cadastro">Endereço</label>
+                                        <input type="text" name="endereco_cadastro" class="form-control" id="endereco_cadastro" placeholder="Rua Ferreira 07">
+                                        <div class="invalid-feedback">Campo de preenchimento obrigatório</div>
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label for="inputAddress2">Complemento</label>
-                                        <input type="text" name="complemento" class="form-control" id="inputAddress2" placeholder="Apartamento, lote, quadra...">
+                                        <label for="complemento_cadastro">Complemento</label>
+                                        <input type="text" name="complemento_cadastro" class="form-control" id="complemento_cadastro" placeholder="Apartamento, lote, quadra...">
                                     </div>
                                 </div>
                                 
@@ -197,8 +206,14 @@
                                             Desejo receber avisos de eventos
                                         </label>
                                     </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="termos_cadastro" name="termos_cadastro">
+                                        <label class="form-check-label" for="termos_cadastro">
+                                            Concordo com os termos de serviço e política de privacidade
+                                        </label>
+                                    </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                <button type="button" class="btn btn-primary" id="botao_cadastrar">Cadastrar</button>
                             </form>
                         </div>
                         <div class="col-2"></div>
