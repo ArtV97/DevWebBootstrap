@@ -147,17 +147,19 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="email_cadastro">Email</label>
-                                    <input type="password" class="form-control" id="email_cadastro" name="email_cadastro">
+                                    <input type="email" class="form-control" id="email_cadastro" name="email_cadastro">
                                     <div class="invalid-feedback">Campo de preenchimento obrigatório</div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
                                         <label for="senha_cadastro">Senha</label>
                                         <input type="password" class="form-control" id="senha_cadastro" name="senha_cadastro">
+                                        <div class="invalid-feedback">Campo de preenchimento obrigatório</div>
                                     </div>
                                     <div class="form-group col-md-6">
                                         <label for="confirmar_senha_cadastro">Confirmar Senha</label>
                                         <input type="password" class="form-control" id="confirmar_senha_cadastro" name="confirmar_senha_cadastro">
+                                        <div class="invalid-feedback">Por favor repita a senha neste campo</div>
                                     </div>
                                 </div>
                                 <div class="form-row">
@@ -194,24 +196,27 @@
                                 </div>
                                 
                                 <div class="form-group">
+                                    <label class="font-weight-bold">Interesses</label>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="promo" name="promo">
-                                        <label class="form-check-label" for="promo">
-                                            Desejo receber avisos de promoções
+                                        <input class="form-check-input interesses" type="checkbox" id="livros-cadastro" name="livros-cadastro">
+                                        <label class="form-check-label" for="livros-cadastro">
+                                            Desejo receber anúncios de Livros
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="eventos" name="eventos">
-                                        <label class="form-check-label" for="eventos">
-                                            Desejo receber avisos de eventos
+                                        <input class="form-check-input interesses" type="checkbox" id="games-cadastro" name="games-cadastro">
+                                        <label class="form-check-label" for="games-cadastro">
+                                            Desejo receber anúncios de Games
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="termos_cadastro" name="termos_cadastro">
-                                        <label class="form-check-label" for="termos_cadastro">
-                                            Concordo com os termos de serviço e política de privacidade
+                                        <input class="form-check-input interesses" type="checkbox" id="eventos-cadastro" name="eventos-cadastro">
+                                        <label class="form-check-label" for="eventos-cadastro">
+                                            Desejo receber avisos de Eventos
                                         </label>
                                     </div>
+                                    <div class="invalid-feedback">Campo de preenchimento obrigatório</div>
+                                    <small class="text-muted">Ao se cadastrar você concorda com os <a href="">termos de serviço</a> da Valhalla.</small>
                                 </div>
                                 <button type="button" class="btn btn-primary" id="botao_cadastrar">Cadastrar</button>
                             </form>
