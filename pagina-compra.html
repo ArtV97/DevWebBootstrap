@@ -74,14 +74,19 @@
             <div class="card list-group-item mb-4">
                 <div class="card-header bg-white">
                     <div class="row">
-                        <h4 class="col-sm-10 col-12">Contos Inacabados</h4>
-                        <span class="col-sm-2 col-4 font-weight-bold text-success">Em Estoque</span>
+                        <div class="col-sm-8 col-12">
+							<h4 class="mb-0">Contos Inacabados</h4>
+							<small class="text-muted">Autor: J.R.R Tolkien</small>
+						</div>
+                        <div class="col-sm-4 text-right">
+							<span class="font-weight-bold text-success">Em Estoque</span>
+							<h5 class="font-weight-bold mb-0">R$37,90</h5>
+						</div>
                     </div>
-                    <small class="text-muted">Autor: J.R.R Tolkien</small>
                 </div>
                 <div class="card-body">
                     <div class="row mb-4">
-                        <div id="carousel-id" class="carousel slide col-4"
+                        <div id="carousel-id" class="carousel slide col-sm-4 mb-2"
                         data-ride="carousel" data-interval="false">
                             <ol class="carousel-indicators">
                                 <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
@@ -111,10 +116,29 @@
                                 <span class="sr-only">Próximo</span>
                             </a>
                         </div>
-                        <div class="col-4 text-center">
-                            <input type="text" class="form-control mb-2" id="frete" name="frete" placeholder="Digite seu CEP"> 
-                            <button class="btn btn-secondary">Calcular frete</button>
-                            <div>O que achou desta oferta?</div>
+                        <div class="col-sm-4 text-center mb-2">
+							<input type="text" class="form-control mb-1" id="frete" name="frete" placeholder="Digite seu CEP">
+							<div class="mb-1">
+								<div class="form-check form-check-inline">
+									<input type="radio" id="pac" name="entrega"
+									value="pac" class="form-check-input">
+									<label for="pac" class="form-check-label">PAC</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" id="sedex" name="entrega"
+									value="F" class="form-check-input">
+									<label for="sedex" class="form-check-label">Sedex</label>
+								</div>
+								<div id="sexo-feedback" class="invalid-feedback">Campo de preenchimento obrigatório</div>
+							</div>
+							<button class="btn btn-secondary">Calcular frete</button>
+							<div class="font-weight-bold">R$ XX,XX</div>
+                            
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <h5 class="font-weight-bold mb-2" style="padding: 7px 0px;">Total: R$ XX,XX</h5>
+							<button class="btn btn-secondary">Comprar</button>
+							<div>O que achou desta oferta?</div>
                             
                             <div style="display: inline">
                                 <span id="like" data-like="8"></span>
@@ -127,12 +151,6 @@
                                 <span id="dislike" data-dislike="3"></span>
                             </div>
                             <div><img src="assets/images/facebook.jpg" alt="facebook icon"> <a href=""> Compartilhar</a></div>
-                        </div>
-                        <div class="col-4 text-center">
-                            <h5 class="font-weight-bold mb-0">R$37,90</h5>
-                            <span class="font-weight-bold border-bottom border-dark">+ 00,00</span><br>
-                            <div class="font-weight-bold mb-2">Total: R$ XX,XX</div>
-                            <button class="btn btn-secondary">Comprar</button>
                         </div>
                         
                     </div>
@@ -162,7 +180,7 @@
 			</div>
 			<h4>Clientes que compraram este item também compraram</h4>
 			<div class="row">
-				<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="col-lg-3 col-sm-6">
 					<div class="card mb-4 shadow-sm card">
 						<a href="pagina-compra.html">
 							<img src="assets/images/livro1.jpg" class="card-img-top" alt="Livro Tolkien" style="height: 218px; border-bottom: 1px solid lightgrey;">
@@ -192,7 +210,7 @@
 					</div>
 				</div>
 	
-				<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="col-lg-3 col-sm-6">
 					<div class="card mb-4 shadow-sm card">
 						<a href="pagina_compra">
 							<img src="assets/images/livro2.jpg" class="card-img-top" alt="Livro Tolkien" style="height: 218px; border-bottom: 1px solid lightgrey;">
@@ -222,7 +240,7 @@
 					</div>
 				</div>
 	
-				<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="col-lg-3 col-sm-6">
 					<div class="card mb-4 shadow-sm card">
 						<a href="pagina_compra">
 							<img src="assets/images/livro3.jpg" class="card-img-top" alt="Livro Tolkien" style="height: 218px; border-bottom: 1px solid lightgrey;">
@@ -252,7 +270,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-3 col-md-4 col-sm-6">
+				<div class="col-lg-3 col-sm-6">
 					<div class="card mb-4 shadow-sm card">
 						<a href="pagina_compra">
 							<img src="assets/images/livro3.jpg" class="card-img-top" alt="Livro Tolkien" style="height: 218px; border-bottom: 1px solid lightgrey;">

@@ -38,7 +38,6 @@ $(function(){
     });
 
     $('#btn-like').click(function(){
-        console.log('Like');
         let like = $('#like');
         let dislike = $('#dislike');
 
@@ -52,13 +51,11 @@ $(function(){
     });
 
     $('#btn-dislike').click(function(){
-        console.log('Dislike');
         let like = $('#like');
         let dislike = $('#dislike');
 
         dislike.data('dislike', dislike.data('dislike') + 1);
         if(document.getElementById('btn-like').disabled){
-            console.log('Like está desabilitado');
             like.data('like', like.data('like') - 1);
         }
         $('#btn-dislike').attr("disabled", true)
