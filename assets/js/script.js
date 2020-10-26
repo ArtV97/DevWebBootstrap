@@ -1,6 +1,7 @@
 $(function(){
     $('[data-toggle="popover"]').popover();
     $('#compUsadosModal').modal('show');
+    show_like_dislike();
 
     $('#botao_login').click(function(){
         let email = valida_text_box('#email_login');
@@ -35,7 +36,41 @@ $(function(){
             alert("Campos em branco");
         }
     });
+
+    $('#btn-like').click(function(){
+        console.log('Like');
+        let like = $('#like');
+        let dislike = $('#dislike');
+
+        like.data('like', like.data('like') + 1);
+        if(document.getElementById('btn-dislike').disabled){
+            dislike.data('dislike', dislike.data('dislike') - 1);
+        }
+        $('#btn-like').attr("disabled", true)
+        $('#btn-dislike').attr("disabled", false)
+        show_like_dislike();
+    });
+
+    $('#btn-dislike').click(function(){
+        console.log('Dislike');
+        let like = $('#like');
+        let dislike = $('#dislike');
+
+        dislike.data('dislike', dislike.data('dislike') + 1);
+        if(document.getElementById('btn-like').disabled){
+            console.log('Like está desabilitado');
+            like.data('like', like.data('like') - 1);
+        }
+        $('#btn-dislike').attr("disabled", true)
+        $('#btn-like').attr("disabled", false)
+        show_like_dislike();
+    });
 })
+
+function show_like_dislike(){
+    $('#like').text($('#like').data('like'));
+    $('#dislike').text($('#dislike').data('dislike'));
+}
 
 function valida_text_box(param){
     let id_text_box = $(param);
